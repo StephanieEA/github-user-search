@@ -10,7 +10,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: #f7f7f7;
 }
 
 h1 {
@@ -39,7 +39,11 @@ ul {
 }
 
 .root--dark h1 {
-    color: rgb(3, 218, 197);
+    color: rgb(200, 255, 244);
+}
+
+.root--dark a {
+    color: rgb(200, 255, 244);
 }
 
 .root--light h1 {
@@ -47,6 +51,7 @@ ul {
 }
 
 .main-section {
+    background-color: #fff;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -60,7 +65,7 @@ ul {
 .btn {
     padding: 10px 20px;
     border-radius: 8px;
-
+    cursor: pointer;
 }
 
 .btn--right {
@@ -91,6 +96,7 @@ ul {
     background: none;
     color: midnightblue;
     font-size: 24px;
+    padding: 0;
 }
 
 .lightbox .btn--clear {
@@ -151,12 +157,21 @@ ul {
 }
 
 .root--light .lightbox-card {
-    background-color: #FFF;
+    background-color: #f7f7f7;
+}
+
+.root--dark .lightbox-card {
+    background-color: #414141;
 }
 
 .root--dark .lightbox {
     background-color: rgba(0,0,0, 0.8);
 }
+
+.root--dark .card.lightbox-card:hover {
+    background-color: rgb(36, 36, 36);
+}
+
 
 .root--dark .card {
     background-color: #242424;
@@ -171,10 +186,11 @@ ul {
 }
 
 .root--light .card:hover {
-    background-color: #fcfcfc;
+    background-color: #fff;
 }
 
 .root--light .card {
+    background-color: #f7f7f7;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -202,6 +218,7 @@ ul {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 8px;
+    cursor: pointer;
 }
 
 .root--dark .form--search input[type="submit"] {

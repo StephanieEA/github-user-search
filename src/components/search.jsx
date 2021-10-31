@@ -40,7 +40,7 @@ export const Search = ({setUsers}) => {
                 aria-label="Search"
             />
             <input type="submit" value="Search"/>
-            {search && <button className='btn--clear' onClick={clearSearch}>x</button>}
+            {search && <button className='btn btn--clear' onClick={clearSearch}>x</button>}
             <FontAwesomeIcon icon={faSearch} />
         </form>
     );
