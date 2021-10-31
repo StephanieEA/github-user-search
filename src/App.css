@@ -1,0 +1,239 @@
+body {
+    font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    padding: 60px 0px 30px;
+}
+
+h3 {
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.root--dark {
+    background-color: #121212;
+    color: #FFF;
+    height: 100vh;
+}
+
+.root--dark header {
+    background-color: black;
+}
+
+.root--dark h1 {
+    color: rgb(3, 218, 197);
+}
+
+.root--light h1 {
+    color: rgb(1, 135, 134);
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 160px;
+}
+
+.root--dark .main-section {
+    background-color: #121212;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+
+}
+
+.btn--right {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn--light {
+    background: white;
+    border: 1px solid #6200ee;
+    color: #6200ee;
+}
+
+.btn--dark {
+    background: midnightblue;
+}
+
+.btn--dark, .lightbox .btn.btn--dark {
+    border: none;
+    color: #fff;
+}
+
+.btn--clear {
+    position: absolute;
+    right: 88px;
+    border: none;
+    background: none;
+    color: midnightblue;
+    font-size: 24px;
+}
+
+.lightbox .btn--clear {
+    top: 0px;
+    right: 4px;
+}
+
+.lightbox .btn.btn--dark {
+    background: transparent;
+}
+
+.lightbox {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.8);
+    /*the following isn't necessary but will help center everything once we add buttons*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+      
+}
+
+.lightbox .btn {
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: rgb(1, 135, 134);
+}
+
+.card {
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+.lightbox-card {
+    height: 80vh;
+    width: 60vw;
+    max-width: 500px;
+    max-height: 500px;
+    position:relative;
+}
+
+.lightbox-card img {
+    width: 90px;
+}
+
+.lightbox-card ul li {
+    margin: 8px;
+    overflow-wrap: break-word;
+}
+
+.root--light .lightbox-card {
+    background-color: #FFF;
+}
+
+.root--dark .lightbox {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.root--dark .card {
+    background-color: #242424;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.root--dark .card:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.root--light .card:hover {
+    background-color: #fcfcfc;
+}
+
+.root--light .card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.form--search {
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.form--search input[type="text"] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid grey;
+    padding: 8px 30px;
+}
+
+.form--search input[type="submit"] {
+    background-color: white;
+    border: 1px solid grey;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+}
+
+.root--dark .form--search input[type="submit"] {
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    padding: 9px;
+}
+
+
+.form--search .fa-search {
+    position: absolute;
+    left: 24px;
+    top: 8px;
+    color: midnightblue;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .lightbox .btn {
+        font-size: 32px;
+    }
+
+    .main-section {
+        justify-content: flex-start;
+        margin-top: 190px;
+    }
+
+    .lightbox-card img {
+        width: 200px;
+    }
+}
